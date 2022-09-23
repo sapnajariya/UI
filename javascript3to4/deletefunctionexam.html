@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="abc.html">
+        Roll No<input type="text" name="rollno">
+        <input name="operation" type="button" value="Delete" onclick="doDelete(this.form)">
+        </form>
+    <script>
+       
+function doDelete(form)
+{
+if(form.rollno.value=="")
+{
+    alert("roll num can not be null");
+    form.rollno.focus();
+}
+else{
+    var flag=confirm("are you sure?");
+    if(flag)
+    {
+        form.submit();
+    }
+}
+}
+    </script> 
+</body>
+</html>

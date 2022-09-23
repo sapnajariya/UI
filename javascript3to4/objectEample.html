@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   <script>
+    /*myobj={"name":"rays","age":10,"address":"indore"};
+    document.write(myobj.address);
+    document.write("<br>")
+    document.write(myobj["name"]);*/
+
+    
+   /* function emp(name,add)
+    {
+        this.name=name;
+        this.add=add;
+        document.write(this.name+" "+this.add);  
+    }
+    e=new emp("tech","goa");
+    e1=new emp("technology","goa123");*/
+    var emp=new Object()
+    {
+        this.name="rays";
+        this.age=20;
+        this.salary=200000;
+        document.write(this.name);
+    }
+    details()
+    {
+        document.write(this.name); 
+    }
+    
+   </script> 
+</body>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   <script>
+    class Employee{
+        constructor(name,age,salary)
+        {
+            this.name=name;
+            this.age=age;
+            this.salary=salary;
+        }
+        details()
+        {
+            document.write("name"+"<br>"+this.name+" <br>"+ this.age+"<br>"+ this.salary)
+        }
+        
+    }
+    var e=new Employee("rays",20,10000000);
+   // e.details();
+   document.write(e.name+"<br>"+e.age+" "+e.salary);
+   </script> 
+</body>
+</html>

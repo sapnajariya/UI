@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+ <script>
+    class Person{
+        constructor(name,age){
+        this.name=name;
+        this.age=age;
+        document.write(this.name+" "+this.age)
+        }
+       /* constructor()
+        {
+            document.write("hello java");
+        }*/
+        details()
+        {
+            document.write("paresnt class method call");
+        }
+    }
+    class Child extends Person{
+constructor(){
+        super("rays",30);
+}
+       details(){
+            document.write("child class method call");
+    }
+    }
+    //var p=new Person("rays",20);
+    var c1=new Child();
+    c1.details();
+ </script>   
+</body>
+</html>
